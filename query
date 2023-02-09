@@ -1,0 +1,4 @@
+SELECT H.HASTANE, P.taban, P.yandal
+FROM HASTANELER H, PUANLAR P
+WHERE H.HASTane=P.HASTANE and P.yandal="GASTROENTEROLOJI" and  P.yandal=H.yandal
+order by P.TABAN DESC;
